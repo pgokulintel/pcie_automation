@@ -1,4 +1,4 @@
-#pcie_automation
+pcie_automation
 http://goto/pcie_automation
 
 PCIe Automation is the initiative by PCIe Team (ive.india.cvi.pcie@intel.com) to automate all PCIe Perspec (Maestro) Tests to run on the Target. Repository : https://github.com/pgokulintel/pcie_automation.git, https://github.com/intel-sandbox/pcie_automation.git

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--************************************************************-->
+<!--This XML divided into different Test Groups, Test Variations-->
+<!--************************************************************-->
+<TestGroup name='vt_pcie'>
+<!--*********************Test Groups****************************-->
+<TestSuite name='pcie_basic_tests'>
+<!--********************Test Variation 1************************-->
+	<TestLine name="svos_config" skip="false">
+		<svos_perspec_ver>22.06.001-s</svos_perspec_ver>		
+	</TestLine>
+<!--********************Test Variation 1************************-->
+	<TestLine name="001_DATATRAFFIC_UPSTREAM_PEG10" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>pcie_tests</sln_name>
+		<csv_name>pcie_tests</csv_name>
+		<action>pcie_upstream_traffic_test</action>
+		<table_name>pcie_upstream_traffic_test</table_name>
+		<test_ctrls>PEG10</test_ctrls>
+		<ctlr>PEG10</ctlr>
+	</TestLine>
+	<TestLine name="001_DATATRAFFIC_UPSTREAM_PEG11" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>pcie_tests</sln_name>
+		<csv_name>pcie_tests</csv_name>
+		<action>pcie_upstream_traffic_test</action>
+		<table_name>pcie_upstream_traffic_test</table_name>
+		<test_ctrls>PEG11</test_ctrls>
+		<ctlr>PEG11</ctlr>
+	</TestLine>
+	<TestLine name="001_DATATRAFFIC_UPSTREAM_PEG60" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>pcie_tests</sln_name>
+		<csv_name>pcie_tests</csv_name>
+		<action>pcie_upstream_traffic_test</action>
+		<table_name>pcie_upstream_traffic_test</table_name>
+		<test_ctrls>PEG60</test_ctrls>
+		<ctlr>PEG60</ctlr>
+	</TestLine>
+	<TestLine name="002_DATATRAFFIC_DOWNSTREAM_PEG10" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>pcie_tests</sln_name>
+		<csv_name>pcie_tests</csv_name>
+		<action>pcie_downstream_traffic_test</action>
+		<table_name>pcie_downstream_traffic_test</table_name>
+		<test_ctrls>PEG10</test_ctrls>
+		<ctlr>PEG10</ctlr>
+	</TestLine>
+	<TestLine name="002_DATATRAFFIC_UPSTREAM_PEG11" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>pcie_tests</sln_name>
+		<csv_name>pcie_tests</csv_name>
+		<action>pcie_downstream_traffic_test</action>
+		<table_name>pcie_downstream_traffic_test</table_name>
+		<test_ctrls>PEG11</test_ctrls>
+		<ctlr>PEG11</ctlr>
+	</TestLine>
+	<TestLine name="002_DATATRAFFIC_DOWNSTREAM_PEG60" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>pcie_tests</sln_name>
+		<csv_name>pcie_tests</csv_name>
+		<action>pcie_downstream_traffic_test</action>
+		<table_name>pcie_downstream_traffic_test</table_name>
+		<test_ctrls>PEG60</test_ctrls>
+		<ctlr>PEG60</ctlr>
+	</TestLine>
+	<TestLine name="003_DATATRAFFIC_UPSTREAM_ATOMIC_SWAP_PEG10" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_SWAP</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG10</test_ctrls>
+		<ctlr>PEG10</ctlr>
+	</TestLine>
+	<TestLine name="003_DATATRAFFIC_UPSTREAM_ATOMIC_SWAP_PEG11" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_SWAP</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG11</test_ctrls>
+		<ctlr>PEG11</ctlr>
+	</TestLine>
+	<TestLine name="003_DATATRAFFIC_UPSTREAM_ATOMIC_SWAP_PEG60" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_SWAP</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG60</test_ctrls>
+		<ctlr>PEG60</ctlr>
+	</TestLine>	
+	<TestLine name="004_DATA_TRAFFIC_UPSTREAM_ATOMIC_CAS_PEG10" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_CAS</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG10</test_ctrls>
+		<ctlr>PEG10</ctlr>
+	</TestLine>
+	<TestLine name="004_DATA_TRAFFIC_UPSTREAM_ATOMIC_CAS_PEG11" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_CAS</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG11</test_ctrls>
+		<ctlr>PEG11</ctlr>
+	</TestLine>
+	<TestLine name="004_DATA_TRAFFIC_UPSTREAM_ATOMIC_CAS_PEG60" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_CAS</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG60</test_ctrls>
+		<ctlr>PEG60</ctlr>
+	</TestLine>
+	<TestLine name="005_DATA_TRAFFIC_UPSTREAM_ATOMIC_FETCHADD_PEG10" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_FETCHADD</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG10</test_ctrls>
+		<ctlr>PEG10</ctlr>
+	</TestLine>
+	<TestLine name="005_DATA_TRAFFIC_UPSTREAM_ATOMIC_FETCHADD_PEG11" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_FETCHADD</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG11</test_ctrls>
+		<ctlr>PEG11</ctlr>
+	</TestLine>
+	<TestLine name="005_DATA_TRAFFIC_UPSTREAM_ATOMIC_FETCHADD_PEG60" skip="false">
+		<prerequisite>install_perspec,biosknow.xml</prerequisite>
+		<sln_name>eden_tc</sln_name>
+		<csv_name>eden_test_table</csv_name>
+		<action>split_with_one_pattern_Atomics_FETCHADD</action>
+		<table_name>split_with_one_pattern</table_name>
+		<test_ctrls>PEG60</test_ctrls>
+		<ctlr>PEG60</ctlr>
+	</TestLine>
+<!--**********************Test Variations End**********************-->
+</TestSuite>
+<TestSuite name='pcie_lpm_tests'>
+<!--********************Test Variation 1************************-->
+<!--**********************Test Variations End**********************-->
+</TestSuite>
+<!--***********************Test Groups End*************************-->
+</TestGroup>

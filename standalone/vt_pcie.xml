@@ -9,7 +9,6 @@
 	<TestLine name="svos_config" skip="false">
 		<svos_perspec_ver>22.06.001-s</svos_perspec_ver>		
 	</TestLine>
-<!--********************Test Variation 1************************-->
 	<TestLine name="001_DATATRAFFIC_UPSTREAM_PEG10" skip="false">
 		<prerequisite>install_perspec,biosknow.xml</prerequisite>
 		<sln_name>pcie_tests</sln_name>

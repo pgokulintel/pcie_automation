@@ -1,0 +1,4953 @@
+<?xml version="1.0" ?>
+<pcie_tests>
+	<key name="1_PXPA0_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="2_PXPA0_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="3_PXPA0_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="4_PXPA0_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="5_PXPA0_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="6_PXPA0_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="7_PXPA0_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="8_PXPA0_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="9_PXPA0_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="10_PXPA0_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="11_PXPA0_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="12_PXPA0_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="13_PXPA0_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="14_PXPA0_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="15_PXPA0_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="16_PXPA0_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="17_PXPA0_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="18_PXPA0_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="19_PXPA0_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="20_PXPA0_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="21_PXPA0_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="22_PXPA0_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="23_PXPA0_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="24_PXPA0_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="25_PXPA0_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="26_PXPA0_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="27_PXPA0_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="28_PXPA0_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="29_PXPA0_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="30_PXPA0_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="31_PXPA0_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="32_PXPA0_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="33_PXPA0_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="34_PXPA0_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="35_PXPA0_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="36_PXPA0_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="37_PXPA0_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="38_PXPA0_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="39_PXPA0_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="40_PXPA0_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="41_PXPA0_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="42_PXPA0_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="43_PXPA0_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="44_PXPA0_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="45_PXPA0_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA0</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="46_PXPA1_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="47_PXPA1_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="48_PXPA1_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="49_PXPA1_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="50_PXPA1_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="51_PXPA1_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="52_PXPA1_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="53_PXPA1_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="54_PXPA1_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="55_PXPA1_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="56_PXPA1_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="57_PXPA1_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="58_PXPA1_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="59_PXPA1_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="60_PXPA1_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="61_PXPA1_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="62_PXPA1_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="63_PXPA1_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="64_PXPA1_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="65_PXPA1_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="66_PXPA1_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="67_PXPA1_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="68_PXPA1_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="69_PXPA1_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="70_PXPA1_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="71_PXPA1_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="72_PXPA1_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="73_PXPA1_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="74_PXPA1_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="75_PXPA1_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="76_PXPA1_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="77_PXPA1_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="78_PXPA1_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="79_PXPA1_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="80_PXPA1_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="81_PXPA1_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="82_PXPA1_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="83_PXPA1_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="84_PXPA1_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="85_PXPA1_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="86_PXPA1_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="87_PXPA1_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="88_PXPA1_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="89_PXPA1_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="90_PXPA1_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPA1</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="91_PXPB_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="92_PXPB_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="93_PXPB_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="94_PXPB_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="95_PXPB_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="96_PXPB_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="97_PXPB_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="98_PXPB_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="99_PXPB_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="100_PXPB_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="101_PXPB_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="102_PXPB_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="103_PXPB_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="104_PXPB_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="105_PXPB_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="106_PXPB_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="107_PXPB_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="108_PXPB_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="109_PXPB_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="110_PXPB_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="111_PXPB_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="112_PXPB_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="113_PXPB_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="114_PXPB_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="115_PXPB_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="116_PXPB_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="117_PXPB_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="118_PXPB_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="119_PXPB_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="120_PXPB_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="121_PXPB_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="122_PXPB_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="123_PXPB_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="124_PXPB_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="125_PXPB_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="126_PXPB_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="127_PXPB_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="128_PXPB_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="129_PXPB_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="130_PXPB_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="131_PXPB_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="132_PXPB_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="133_PXPB_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="134_PXPB_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="135_PXPB_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="136_PXPD_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="137_PXPD_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="138_PXPD_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="139_PXPD_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="140_PXPD_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="141_PXPD_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="142_PXPD_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="143_PXPD_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="144_PXPD_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="145_PXPD_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="146_PXPD_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="147_PXPD_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="148_PXPD_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="149_PXPD_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="150_PXPD_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="151_PXPD_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="152_PXPD_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="153_PXPD_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="154_PXPD_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="155_PXPD_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="156_PXPD_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="157_PXPD_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="158_PXPD_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="159_PXPD_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="160_PXPD_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="161_PXPD_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="162_PXPD_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="163_PXPD_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="164_PXPD_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="165_PXPD_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="166_PXPD_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="167_PXPD_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="168_PXPD_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="169_PXPD_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="170_PXPD_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="171_PXPD_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="172_PXPD_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="173_PXPD_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="174_PXPD_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="175_PXPD_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="176_PXPD_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="177_PXPD_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="178_PXPD_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="179_PXPD_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="180_PXPD_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="181_PXPF_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="182_PXPF_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="183_PXPF_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="184_PXPF_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="185_PXPF_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="186_PXPF_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="187_PXPF_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="188_PXPF_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="189_PXPF_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="190_PXPF_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="191_PXPF_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="192_PXPF_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="193_PXPF_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="194_PXPF_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="195_PXPF_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="196_PXPF_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="197_PXPF_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="198_PXPF_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="199_PXPF_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="200_PXPF_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="201_PXPF_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="202_PXPF_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="203_PXPF_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="204_PXPF_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="205_PXPF_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="206_PXPF_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="207_PXPF_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="208_PXPF_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="209_PXPF_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="210_PXPF_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="211_PXPF_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="212_PXPF_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="213_PXPF_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="214_PXPF_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="215_PXPF_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="216_PXPF_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="217_PXPF_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="218_PXPF_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="219_PXPF_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="220_PXPF_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="221_PXPF_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="222_PXPF_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="223_PXPF_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="224_PXPF_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="225_PXPF_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PXPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="226_PCHSPA_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="227_PCHSPA_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="228_PCHSPA_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="229_PCHSPA_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="230_PCHSPA_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="231_PCHSPA_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="232_PCHSPA_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="233_PCHSPA_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="234_PCHSPA_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="235_PCHSPA_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="236_PCHSPA_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="237_PCHSPA_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="238_PCHSPA_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="239_PCHSPA_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="240_PCHSPA_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="241_PCHSPA_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="242_PCHSPA_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="243_PCHSPA_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="244_PCHSPA_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="245_PCHSPA_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="246_PCHSPA_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="247_PCHSPA_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="248_PCHSPA_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="249_PCHSPA_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="250_PCHSPA_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="251_PCHSPA_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="252_PCHSPA_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="253_PCHSPA_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="254_PCHSPA_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="255_PCHSPA_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="256_PCHSPA_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="257_PCHSPA_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="258_PCHSPA_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="259_PCHSPA_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="260_PCHSPA_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="261_PCHSPA_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="262_PCHSPA_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="263_PCHSPA_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="264_PCHSPA_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="265_PCHSPA_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="266_PCHSPA_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="267_PCHSPA_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="268_PCHSPA_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="269_PCHSPA_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="270_PCHSPA_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPA</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="271_PCHSPB_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="272_PCHSPB_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="273_PCHSPB_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="274_PCHSPB_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="275_PCHSPB_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="276_PCHSPB_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="277_PCHSPB_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="278_PCHSPB_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="279_PCHSPB_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="280_PCHSPB_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="281_PCHSPB_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="282_PCHSPB_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="283_PCHSPB_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="284_PCHSPB_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="285_PCHSPB_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="286_PCHSPB_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="287_PCHSPB_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="288_PCHSPB_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="289_PCHSPB_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="290_PCHSPB_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="291_PCHSPB_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="292_PCHSPB_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="293_PCHSPB_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="294_PCHSPB_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="295_PCHSPB_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="296_PCHSPB_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="297_PCHSPB_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="298_PCHSPB_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="299_PCHSPB_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="300_PCHSPB_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="301_PCHSPB_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="302_PCHSPB_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="303_PCHSPB_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="304_PCHSPB_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="305_PCHSPB_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="306_PCHSPB_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="307_PCHSPB_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="308_PCHSPB_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="309_PCHSPB_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="310_PCHSPB_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="311_PCHSPB_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="312_PCHSPB_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="313_PCHSPB_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="314_PCHSPB_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="315_PCHSPB_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPB</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="316_PCHSPC_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="317_PCHSPC_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="318_PCHSPC_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="319_PCHSPC_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="320_PCHSPC_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="321_PCHSPC_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="322_PCHSPC_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="323_PCHSPC_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="324_PCHSPC_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="325_PCHSPC_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="326_PCHSPC_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="327_PCHSPC_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="328_PCHSPC_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="329_PCHSPC_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="330_PCHSPC_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="331_PCHSPC_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="332_PCHSPC_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="333_PCHSPC_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="334_PCHSPC_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="335_PCHSPC_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="336_PCHSPC_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="337_PCHSPC_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="338_PCHSPC_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="339_PCHSPC_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="340_PCHSPC_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="341_PCHSPC_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="342_PCHSPC_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="343_PCHSPC_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="344_PCHSPC_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="345_PCHSPC_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="346_PCHSPC_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="347_PCHSPC_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="348_PCHSPC_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="349_PCHSPC_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="350_PCHSPC_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="351_PCHSPC_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="352_PCHSPC_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="353_PCHSPC_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="354_PCHSPC_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="355_PCHSPC_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="356_PCHSPC_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="357_PCHSPC_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="358_PCHSPC_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="359_PCHSPC_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="360_PCHSPC_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPC</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="361_PCHSPD_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="362_PCHSPD_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="363_PCHSPD_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="364_PCHSPD_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="365_PCHSPD_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="366_PCHSPD_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="367_PCHSPD_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="368_PCHSPD_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="369_PCHSPD_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="370_PCHSPD_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="371_PCHSPD_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="372_PCHSPD_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="373_PCHSPD_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="374_PCHSPD_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="375_PCHSPD_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="376_PCHSPD_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="377_PCHSPD_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="378_PCHSPD_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="379_PCHSPD_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="380_PCHSPD_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="381_PCHSPD_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="382_PCHSPD_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="383_PCHSPD_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="384_PCHSPD_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="385_PCHSPD_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="386_PCHSPD_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="387_PCHSPD_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="388_PCHSPD_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="389_PCHSPD_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="390_PCHSPD_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="391_PCHSPD_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="392_PCHSPD_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="393_PCHSPD_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="394_PCHSPD_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="395_PCHSPD_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="396_PCHSPD_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="397_PCHSPD_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="398_PCHSPD_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="399_PCHSPD_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="400_PCHSPD_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="401_PCHSPD_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="402_PCHSPD_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="403_PCHSPD_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="404_PCHSPD_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="405_PCHSPD_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPD</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="406_PCHSPE_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="407_PCHSPE_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="408_PCHSPE_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="409_PCHSPE_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="410_PCHSPE_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="411_PCHSPE_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="412_PCHSPE_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="413_PCHSPE_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="414_PCHSPE_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="415_PCHSPE_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="416_PCHSPE_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="417_PCHSPE_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="418_PCHSPE_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="419_PCHSPE_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="420_PCHSPE_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="421_PCHSPE_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="422_PCHSPE_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="423_PCHSPE_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="424_PCHSPE_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="425_PCHSPE_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="426_PCHSPE_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="427_PCHSPE_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="428_PCHSPE_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="429_PCHSPE_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="430_PCHSPE_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="431_PCHSPE_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="432_PCHSPE_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="433_PCHSPE_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="434_PCHSPE_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="435_PCHSPE_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="436_PCHSPE_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="437_PCHSPE_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="438_PCHSPE_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="439_PCHSPE_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="440_PCHSPE_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="441_PCHSPE_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="442_PCHSPE_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="443_PCHSPE_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="444_PCHSPE_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="445_PCHSPE_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="446_PCHSPE_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="447_PCHSPE_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="448_PCHSPE_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="449_PCHSPE_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="450_PCHSPE_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPE</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="451_PCHSPF_G5x16_L0_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="452_PCHSPF_G5x16_L0_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="453_PCHSPF_G5x16_L0_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="454_PCHSPF_G5x16_L0_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="455_PCHSPF_G5x16_L0_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="456_PCHSPF_G5x16_L0s_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="457_PCHSPF_G5x16_L0s_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="458_PCHSPF_G5x16_L0s_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="459_PCHSPF_G5x16_L0s_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="460_PCHSPF_G5x16_L0s_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L0s</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="461_PCHSPF_G5x16_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="462_PCHSPF_G5x16_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="463_PCHSPF_G5x16_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="464_PCHSPF_G5x16_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="465_PCHSPF_G5x16_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="466_PCHSPF_G5x16_ASPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="467_PCHSPF_G5x16_ASPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="468_PCHSPF_G5x16_ASPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="469_PCHSPF_G5x16_ASPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="470_PCHSPF_G5x16_ASPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="471_PCHSPF_G5x16_ASPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="472_PCHSPF_G5x16_ASPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="473_PCHSPF_G5x16_ASPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="474_PCHSPF_G5x16_ASPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="475_PCHSPF_G5x16_ASPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>ASPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="476_PCHSPF_G5x16_PCIPM_L1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="477_PCHSPF_G5x16_PCIPM_L1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="478_PCHSPF_G5x16_PCIPM_L1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="479_PCHSPF_G5x16_PCIPM_L1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="480_PCHSPF_G5x16_PCIPM_L1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="481_PCHSPF_G5x16_PCIPM_L1_1_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="482_PCHSPF_G5x16_PCIPM_L1_1_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="483_PCHSPF_G5x16_PCIPM_L1_1_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="484_PCHSPF_G5x16_PCIPM_L1_1_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="485_PCHSPF_G5x16_PCIPM_L1_1_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_1</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="486_PCHSPF_G5x16_PCIPM_L1_2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="487_PCHSPF_G5x16_PCIPM_L1_2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="488_PCHSPF_G5x16_PCIPM_L1_2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="489_PCHSPF_G5x16_PCIPM_L1_2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="490_PCHSPF_G5x16_PCIPM_L1_2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>PCIPM_L1_2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="491_PCHSPF_G5x16_L2_DOWNSTREAM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="492_PCHSPF_G5x16_L2_DOWNSTREAM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>DOWNSTREAM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="493_PCHSPF_G5x16_L2_UPSTREAM_MEM_READ_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_READ</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="494_PCHSPF_G5x16_L2_UPSTREAM_MEM_WRITE_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>UPSTREAM_MEM_WRITE</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+	<key name="495_PCHSPF_G5x16_L2_INTERRUPTS_S3_PKGC10_ITER100">
+		<root_port>PCHSPF</root_port>
+		<link_speed>5</link_speed>
+		<link_width>16</link_width>
+		<lpm>L2</lpm>
+		<data_traffic>INTERRUPTS</data_traffic>
+		<sx>S3</sx>
+		<pkgc>PKGC10</pkgc>
+		<iterations>100</iterations>
+	</key>
+</pcie_tests>

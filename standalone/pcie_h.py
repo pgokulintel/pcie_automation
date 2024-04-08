@@ -1,15 +1,30 @@
-class did_vid(object):
-    def __init__(self):
-        self.did = {
-                    0x144D : 'SAMSUNG',
-                    0x15b7 : 'WD'
-                    }
+did_vid = {
+    0x144D : 'SAMSUNG',
+    0x15b7 : 'WD',
+    0x3732 : 'SDExp',
+    0x1E07 : 'KIOXIA'    
+    }
 
-PWR_STATE = {
-    'D0'     : 0,
-    'D1'     : 1,
-    'D2'     : 2,
-    'D3_HOT' : 3
+pwr_state = {
+    0     :  'D0',
+    1     :  'D1',
+    2     :  'D2',
+    3     :  'D3_HOT'
+    }
+
+payload = {
+    0x0: "128B",
+    0x1: "256B",
+    0x2: "512B",
+    0x7: "64B"
+    }
+
+linkspeed = {
+    0x1 : '2.5 GT/s',
+    0x2 : '5 GT/s',
+    0x3 : '8 GT/s',
+    0x4 : '16 GT/s',
+    0x5 : '32 GT/s'
     }
 
 class config_space(object):
@@ -221,8 +236,7 @@ class pcie_ext_cap_ids(object):
         self.pl_16gt = 0x26            # physical layer 16.0 gt/s 
         self.pl_32gt = 0x2a    # physical layer 32.0 gt/s 
         self.doe = 0x2e            # data object exchange 
-        self.max = sellf.doe
-
+        self.max = 0
         self.ext_cap_dsn_sizeof = 12
         self.ext_cap_mcast_endpoint_sizeof = 40
 
@@ -317,7 +331,7 @@ class pcie_msi_registers(object):
         self.msix_entry_vector_ctrl = 0xc  # vector control 
         self.msix_entry_ctrl_maskbit = 0x00000001
 
-class pcie_cap_struct_registers(object):
+class pcie_cap_registers(object):
     def __init__(self):
         
         # pci express capability registers 

@@ -2,9 +2,10 @@ from prettytable import PrettyTable
 from enum import Enum
 import pickle
 from arrowlake.pcie_utils.pcie_h import *
-import bitstruct
+from arrowlake.pcie_utils.pcie_registers import *
 import ipccli as _ipccli
 itp = _ipccli.baseaccess()
+from svtools.itp2baseaccess import *
 
 PCIE_STD_CAP_PTR= 0x34
 
@@ -42,13 +43,14 @@ class pcie_cap(object):
 
 class pciecontainer():
     def __init__(self, pcie_xbar =  0xC0000000, reg_bar = 0xE0000000):
-        print('PCIe Utilities Container...')
+        print('PCIe Container Initializing...', end='')
         self.pcie_mmio_xbar       = pcie_xbar
         self.pcie_mmio2sb_regbar  = reg_bar
         self.root_ports           = [0x100, 0x600,0x061,0x62,0x64]
         #self.rp_bdf               = self.get_rp_bdf()
         self.itp_halt()
         self.debug = 0
+        print('Done')
     
     def cfg_read(self, bus = 0, device = 0, function = 0, offset = 0, access = 'mmio', port_id = 0, seg_id =0, size = 4):
         if (self.debug):
@@ -161,7 +163,6 @@ class pciecontainer():
         sbus = self.get_secbus_num(bus, device, function)
         didvid = self.get_did(bus = sbus)
         vid = didvid[0] & 0xFFFF
-        print(hex(vid))
         if(sbus == 0):
             return [0, 'None']
         else:
@@ -172,12 +173,11 @@ class pciecontainer():
                     return [hex(didvid[0]),did_vid[vid]]
                 else:
                     return [hex(didvid[0]),hex(didvid[0])]
-        
-        
+                
     def get_header_type(self, bus = 0, device = 0, function = 0):
-
-        [multi_fun, header_type ] = bitstruct.unpack('u1u7', self.cfg_read(bus, device, function, offset = 0xE, size = 1).to_bytes(1,'big'))
-
+        value = self.cfg_read(bus, device, function, offset = 0xE, size = 1)
+        multi_fun = (value & 0x80) >> 7
+        header_type = (value & 0x7F)
         return [multi_fun,header_type]
 
     def get_port_type(self, bus = 0, device = 0, function = 0):
@@ -188,7 +188,7 @@ class pciecontainer():
             
         exp_cap_offset_port_type = exp_cap_offset + port_type_offset
 
-        [port_type, b] = bitstruct.unpack('u4u4', self.cfg_read(bus, device, function, exp_cap_offset_port_type, size = 1).to_bytes(1,'big'))
+        port_type = (self.cfg_read(bus, device, function, exp_cap_offset_port_type, size = 1) >> 4)
         if(port_type == 0x9):
             port = 'RPiEP'
         elif (port_type ==  0x4):
@@ -242,6 +242,7 @@ class pciecontainer():
 
     def get_lpm_enabled(self, bus = 0, device = 0, function = 0):
         return 0
+
     def get_mps_support(self, bus = 0, device = 0, function = 0):
         return 0
 
@@ -250,9 +251,21 @@ class pciecontainer():
         pcie_l1ssctl1 = pcie_ext_offset + pcie_ext_aspm().l1ss_ctl1
         return pcie_l1ssctl1
     
-    def get_aspm_offset(self, bus = 0, device = 0, function = 0):
+    def get_aspm_offset(self, bus = 0, device = 0, function = 0, offset = 0x34, cap_id_exp = 0x10):
         pcie_offset = self.get_cap_offset(bus, device, function)
         return pcie_offset + 0x10
+
+    def enable_l1ss(self, bus = 0, device = 0, function = 0, aspm_L1_1 = 1, aspm_L1_2 = 1, pcipm_L1_1 = 1, pcipm_L1_2 = 1):
+        print('Enabling L1ss on Root Port...')
+        self.set_l1ss(bus, device, function , aspm_L1_1, aspm_L1_2, pcipm_L1_1, pcipm_L1_2)
+        print('Enabling L1ss on EndPoint...')
+        self.set_l1ss(self.get_secbus_num(bus,device,function), 0, 0 , aspm_L1_1, aspm_L1_2, pcipm_L1_1, pcipm_L1_2)
+
+    def disable_l1ss(self, bus = 0, device = 0, function = 0, aspm_L1_1 = 0, aspm_L1_2 = 0, pcipm_L1_1 = 0, pcipm_L1_2 = 0):
+        print('Disabling L1ss on EndPoint...')
+        self.set_l1ss(self.get_secbus_num(bus,device,function), 0, 0 , aspm_L1_1, aspm_L1_2, pcipm_L1_1, pcipm_L1_2)
+        print('Disabling L1ss on Root Port...')
+        self.set_l1ss(bus, device, function , aspm_L1_1, aspm_L1_2, pcipm_L1_1, pcipm_L1_2)
         
     def set_l1ss(self, bus = 0, device = 0, function = 0, aspm_L1_1 = 1, aspm_L1_2 = 1, pcipm_L1_1 = 1, pcipm_L1_2 = 1):
         l1ss_offset = self.get_l1ss_offset(bus,device,function)
@@ -261,6 +274,21 @@ class pciecontainer():
         write_val = (read_val & 0xFFFFFFF0) | pcipm_L1_2 | (pcipm_L1_1 << 1) | (aspm_L1_2<<2) | (aspm_L1_1<<3)
         mem(addr, 1, write_val)
         
+
+    def enable_aspm(self, bus = 0, device = 0, function = 0):
+        print('Enabling ASPM L0s, L1 on Root Ports')
+        self.set_aspm(bus, device, function, aspm_L0s = 1, aspm_L1 = 1)
+        print('Enabling ASPM L0s, L1 on Endpoint')
+        self.set_aspm(self.get_secbus_num(bus,device,function), 0, 0, aspm_L0s = 1, aspm_L1 = 1)
+
+    def disable_aspm(self, bus = 0, device = 0, function = 0):
+        print('Disabling ASPM (L0s and L1)on End Point')
+        self.set_aspm(self.get_secbus_num(bus,device,function), 0, 0, aspm_L0s = 0, aspm_L1 = 0)
+        
+        print('Disabling ASPM (L0s and L1)on Root Port Side')
+        self.set_aspm(bus,device,function, aspm_L0s = 0, aspm_L1 = 0)
+
+
     def set_aspm(self, bus = 0, device = 0, function = 0, aspm_L0s = 1, aspm_L1 = 1):
         aspm_offset = self.get_aspm_offset(bus,device,function)
         read_val = self.cfg_read(bus,device,function, offset=aspm_offset,size=1)
@@ -268,7 +296,6 @@ class pciecontainer():
         write_val = (read_val & 0xFFFFFFFC) | aspm_L0s | (aspm_L1 << 1)
         mem(addr, 1, write_val)
 
-   
     def get_cap(self, bus = 0, device = 0, function = 0):
         pciecap = pcie_cap()
         pcie_offset = self.get_cap_offset(bus,device,function)
@@ -276,28 +303,42 @@ class pciecontainer():
 
         #device capabilities
         pcie_devcap = pcie_offset + pcie_cap_registers().devcap
-        val = self.cfg_read(bus, device, function, offset = pcie_devcap, size = 1)
-        [x, pciecap.etag_support, x, pciecap.mps_support] = bitstruct.unpack('u2u1u2u3',val.to_bytes(1,'big'))
+        value = self.cfg_read(bus, device, function, offset = pcie_devcap, size = 1)
+        dcap = devcap(value)
+        pciecap.etag_support = dcap.ext_tag
+        pciecap.mps_support  = dcap.payload
 
         #device control
         pcie_devcntl = pcie_offset + pcie_cap_registers().devctl
-        val = self.cfg_read(bus, device, function, offset = pcie_devcntl, size = 2)
-        [x, pciecap.max_read_request_size, pciecap.no_snoop, pciecap.aux_power, phatom, pciecap.etag_en, pciecap.nego_mps, pciecap.ro, x,x,x,x]= bitstruct.unpack('u1u3u1u1u1u1u3u1u1u1u1u1',val.to_bytes(2,'big'))
+        value = self.cfg_read(bus, device, function, offset = pcie_devcntl, size = 2)
+        dcntl = devcntl(value)
+        pciecap.max_read_request_size = dcntl.readrq
+        pciecap.nego_mps = dcntl.payload
+        pciecap.ro = dcntl.relax_en
 
         #Link Cap
         pcie_linkcap = pcie_offset + pcie_cap_registers().lnkcap
-        val = self.cfg_read(bus, device, function, offset = pcie_linkcap, size = 2)
-        [x, pciecap.L1_support, pciecap.L0s_support, pciecap.max_linkwidth, pciecap.max_linkspeed]= bitstruct.unpack('u4u1u1u6u4',val.to_bytes(2,'big'))
-
+        value = self.cfg_read(bus, device, function, offset = pcie_linkcap, size = 2)
+        lcap = linkcap(value)
+        pciecap.L1_support = lcap.aspm_l1
+        pciecap.L0s_support = lcap.aspm_l0s
+        pciecap.max_linkwidth = lcap.mlw
+        pciecap.max_linkspeed = lcap.sls
+        
         #Link control
         pcie_linkcntl = pcie_offset + pcie_cap_registers().lnkctl
-        val = self.cfg_read(bus, device, function, offset = pcie_linkcntl, size = 1)
-        [x,pciecap.L1_enable, pciecap.L0s_enable]= bitstruct.unpack('u6u1u1',val.to_bytes(1,'big'))
+        value = self.cfg_read(bus, device, function, offset = pcie_linkcntl, size = 1)
+        lcntl = linkcntl(value)
+        pciecap.L0s_enable = lcntl.aspm_l0s
+        pciecap.L1_enable = lcntl.aspm_l1
         
         #Link status
         pcie_linksts = pcie_offset + pcie_cap_registers().lnksta
-        val = self.cfg_read(bus, device, function, offset = pcie_linksts, size = 2)
-        [x,pciecap.nego_linkwidth, pciecap.nego_linkspeed]= bitstruct.unpack('u6u6u4',val.to_bytes(2,'big'))
+        value = self.cfg_read(bus, device, function, offset = pcie_linksts, size = 2)
+        lsts = linksts(value)
+        pciecap.nego_linkwidth = lsts.nlw
+        pciecap.nego_linkspeed = lsts.cls
+
         pciecap.did  = hex(self.get_did(bus,device,function)[0])
         pciecap.bdf  =[bus,device,function]
         pciecap.sbus = self.get_secbus_num(bus,device,function)
@@ -306,22 +347,56 @@ class pciecontainer():
 
         #L1ss capabilities
         pcie_l1sscap = pcie_ext_offset + pcie_ext_aspm().l1ss_cap
-        print(pcie_l1sscap)
-        val = self.cfg_read(bus, device, function, offset = pcie_l1sscap, size = 1)
-        [x, pciecap.L1_pm_ss_supported, pciecap.aspm_L1_1_support, pciecap.aspm_L1_2_support, pciecap.pcipm_L1_1_support, pciecap.pcipm_L1_2_support] = bitstruct.unpack('u3u1u1u1u1u1',val.to_bytes(1,'big'))
+        value = self.cfg_read(bus, device, function, offset = pcie_l1sscap, size = 1)
+        l1ss_cap = l1sscap(value)
+        pciecap.L1_pm_ss_supported = l1ss_cap.l1_pm_ss
+        pciecap.aspm_L1_1_support = l1ss_cap.aspm_l1_1
+        pciecap.aspm_L1_2_support = l1ss_cap.aspm_l1_2
+        pciecap.pcipm_L1_1_support  = l1ss_cap.pcipm_l1_1
+        pciecap.pcipm_L1_2_support  = l1ss_cap.pcipm_l1_2
+
 
         #L1ss control
         pcie_l1ssctl1 = pcie_ext_offset + pcie_ext_aspm().l1ss_ctl1
-        val = self.cfg_read(bus, device, function, offset = pcie_l1ssctl1, size = 1)
-        [x, pciecap.aspm_L1_1_enable, pciecap.aspm_L1_2_enable, pciecap.pcipm_L1_1_enable, pciecap.pcipm_L1_2_enable] = bitstruct.unpack('u4u1u1u1u1',val.to_bytes(1,'big'))
-       
-        return pciecap
+        value = self.cfg_read(bus, device, function, offset = pcie_l1ssctl1, size = 1)
+        l1ss_cntl = l1sscntl1(value)
         
+        pciecap.aspm_L1_1_enable = l1ss_cntl.aspm_l1_1
+        pciecap.aspm_L1_2_enable = l1ss_cntl.aspm_l1_2
+        pciecap.pcipm_L1_1_enable = l1ss_cntl.pcipm_l1_1
+        pciecap.pcipm_L1_2_enable = l1ss_cntl.pcipm_l1_2
+
+        return pciecap
 
     def print_attribute(self,obj = None):
         for i in (vars(obj)):
             print("{0:10}: {1}".format(i, vars(obj)[i]))
         #print(vars(pciecap))
+
+    def print_lpm_capabilities(self, bus = 0, device = 0, function = 0):
+        field_names          = ['parameter' , 'Root Port', 'EndPoint']
+        pci_cap1             = self.get_cap(bus,device,function)
+        sec_bus = self.get_secbus_num(bus,device,function)
+        pci_cap2             = self.get_cap(sec_bus)
+        cfg_cap              = PrettyTable()
+        cfg_cap.title        = "Root Port and End Point LPM Capabilities"
+        cfg_cap.field_names  = field_names
+        cfg_cap.add_row([ "BDF",pci_cap1.bdf, pci_cap2.bdf])        
+        cfg_cap.add_row([ "Device State",pwr_state[pci_cap1.device_state], pwr_state[pci_cap2.device_state]])
+        cfg_cap.add_row([ "ASPM L0s Support",pci_cap1.L0s_support, pci_cap2.L0s_support])
+        cfg_cap.add_row([ "ASPM L1 Support",pci_cap1.L1_support, pci_cap2.L1_support])
+        cfg_cap.add_row([ "ASPM L1.1 Support",pci_cap1.aspm_L1_1_support, pci_cap2.aspm_L1_1_support])
+        cfg_cap.add_row([ "ASPM L1.2 Support",pci_cap1.aspm_L1_1_support, pci_cap2.aspm_L1_1_support])
+        cfg_cap.add_row([ "PCIPM L1.1 Support",pci_cap1.pcipm_L1_1_support, pci_cap2.pcipm_L1_1_support])
+        cfg_cap.add_row([ "PCIPM L1.2 Support",pci_cap1.pcipm_L1_2_support, pci_cap2.pcipm_L1_2_support])
+
+        cfg_cap.add_row([ "ASPM L0s Enable",pci_cap1.L0s_enable, pci_cap2.L0s_enable])
+        cfg_cap.add_row([ "ASPM L1 Enable",pci_cap1.L1_enable, pci_cap2.L1_enable])
+        cfg_cap.add_row([ "ASPM L1.1 Enable",pci_cap1.aspm_L1_1_enable, pci_cap2.aspm_L1_1_enable])
+        cfg_cap.add_row([ "ASPM L1.2 Enable",pci_cap1.aspm_L1_2_enable, pci_cap2.aspm_L1_2_enable])
+        cfg_cap.add_row([ "PCIPM L1.1 Enable",pci_cap1.pcipm_L1_1_enable, pci_cap2.pcipm_L1_1_enable])
+        cfg_cap.add_row([ "PCIPM L1.2 Enable",pci_cap1.pcipm_L1_2_enable, pci_cap2.pcipm_L1_2_enable])
+        print(cfg_cap)
 
     def print_capabilities(self, bus = 0, device = 0, function = 0):
         field_names          = ['parameter' , 'Root Port', 'EndPoint']
@@ -329,7 +404,7 @@ class pciecontainer():
         sec_bus = self.get_secbus_num(bus,device,function)
         pci_cap2             = self.get_cap(sec_bus)
         cfg_cap              = PrettyTable()
-        cfg_cap.title        = "Root Port and End Point Capabilitiy and Negotiated"
+        cfg_cap.title        = "Root Port and End Point Capabilities and Current Value"
         cfg_cap.field_names  = field_names
         cfg_cap.add_row([ "Device ID",pci_cap1.did, pci_cap2.did])
         cfg_cap.add_row([ "BDF",pci_cap1.bdf, pci_cap2.bdf])        
@@ -365,23 +440,15 @@ class pciecontainer():
     def set_mps(self, bus = 0, device = 0, function = 0, mps = 256):
         print('''This function set Max Payload Size''')
 
-    def set_d3hot(self, bus = 0, device = 0, function = 0):
-        print('''This function set d3hot''')
-        pwr_mgnt_control_reg_off = self.get_offset(PCIE_STD_CAP_PTR, pcie_std_capability_ids().PCI_CAP_ID_PM)
+    def set_devstate(self, bus = 0, device = 0, function = 0, dev_state = 3):
+        pwr_mgnt_control_reg_off = self.get_cap_offset(bus, device, function, 0x34, 0x1)
+        print(pwr_mgnt_control_reg_off)
         add = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + pwr_mgnt_control_reg_off
-        val = mem(add+4,4) + PWR_STATE['D3HOT']        
+        val = (mem(add+4,4) & 0xFFFFFFFC) + dev_state
         mem(add+4, 4, val)
 
     def set_d3cold(self, bus = 0, device = 0, function = 0):
         print('''This function set Linkwidth''')
-
-    def set_l1ss1(self, bus, device, function):
-            [a,b,c,d,self.l1ss_supported, self.aspm_L11_supported, self.aspm_L12_supported, self.pcipm_L11_supported, self.pcipm_L12_supported] = bitstruct.unpack('u8u8u8u3u1u1u1u1u1',nvme_config_space[int(self.l1ss_cap/4)].to_bytes(4,'big'))
-            [a,b,c,d,self.aspm_L11_enable, self.aspm_L12_enable, self.pcipm_L11_enable, self.pcipm_L12_enable] = bitstruct.unpack('u8u8u8u4u1u1u1u1',nvme_config_space[int(self.l1ss_control1/4)].to_bytes(4,'big'))
-
-    def get_l1ss(self, bus = 0, device = 0, function = 0):
-        [a,b,c,d,self.l1ss_supported, self.aspm_L11_supported, self.aspm_L12_supported, self.pcipm_L11_supported, self.pcipm_L12_supported] = bitstruct.unpack('u8u8u8u3u1u1u1u1u1',nvme_config_space[int(self.l1ss_cap/4)].to_bytes(4,'big'))
-        [a,b,c,d,self.aspm_L11_enable, self.aspm_L12_enable, self.pcipm_L11_enable, self.pcipm_L12_enable] = bitstruct.unpack('u8u8u8u4u1u1u1u1',nvme_config_space[int(self.l1ss_control1/4)].to_bytes(4,'big'))
 
     def get_cap_offset(self, bus = 0, device = 0, function = 0, offset = 0x34, cap_id_exp = 0x10):
         cap_id_found = 0
@@ -413,30 +480,7 @@ class pciecontainer():
                 return offset_new
             else:
                 return 0
-            
-       
-    def get_cap_offset1(self, cap_pointer = 0x34, cap_id_exp = 0):
-        
-        if(cap_pointer == 0x34):
-            next_cap_pointer = nvme_config_space[int(cap_pointer/4)] & 0xFF
-            while(next_cap_pointer != 0):
-                cap_id = nvme_config_space[int(next_cap_pointer/4)] & 0xFF
-                print(cap_id)
-                if(cap_id == cap_id_exp):
-                    break;
-                else:
-                    next_cap_pointer = nvme_config_space[int(next_cap_pointer/4)] & 0xFF00
-
-        else:
-            next_cap_pointer = cap_pointer
-            while(next_cap_pointer != 0):
-                cap_id           = nvme_config_space[int(next_cap_pointer/4)] & 0xFFFF
-                if(cap_id == cap_id_exp):
-                    break;
-                else:
-                    next_cap_pointer = ((nvme_config_space[int(next_cap_pointer/4)] & 0xFFF00000) >> 20)
-        return next_cap_pointer
-
+   
 def main():
     pcie_container = pciecontainer()
     #print(hex(pcie_container.cfg_read(bus = 1, device = 0, function = 0)))
@@ -445,10 +489,23 @@ def main():
     #print(pcie_container.cfg_space_read(bus = 1, device = 0, function = 0))
     #pcie_container.cfg_space_load('c:\\bdf_1_0_0')
     #pcie_container.scan_bus(3,15,3)
-    #pcie_container.print_capabilities(0,6,0)
+    #pcie_container.disable_aspm(0,6,0)
+    pcie_container.print_capabilities(0,6,0)
+    #pcie_container.disable_l1ss(0,6,0,0,0,1,1)
+    
+    #pcie_container.set_devstate(1,0,0,3)
+    #sp.print_pcie_info(0,0)
+    #pcie_container.set_devstate(0,6,0,3)
+    #sp.print_pcie_info(0,0)
+    #pcie_container.set_devstate(0,6,0,0)
+    #sp.print_pcie_info(0,0)
+    #pcie_container.set_devstate(1,0,0,0)
+    #sp.print_pcie_info(0,0)
+    #pcie_container.enable_aspm(0,6,0)
+    #pcie_container.print_lpm_capabilities(0,6,0)
     #print(hex(pcie_container.get_did(1,0,0)))
-    pcie_container.set_aspm(1,0,0,1,1)
-   # pcie_container.set_aspm(1,0,0,1,1)
+    #pcie_container.set_aspm(1,0,0,1,1)
+    # pcie_container.set_aspm(1,0,0,1,1)
     #pcie_container.set_l1ss(0,6,0,0,0,0,0)
     #pcie_container.set_l1ss(0,6,0,1,1,1,1)
 

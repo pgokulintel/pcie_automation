@@ -6,6 +6,7 @@ from arrowlake.pcie_utils.pcie_registers import *
 import ipccli as _ipccli
 itp = _ipccli.baseaccess()
 from svtools.itp2baseaccess import *
+import pandas as pd
 
 PCIE_STD_CAP_PTR= 0x34
 
@@ -401,7 +402,7 @@ class pciecontainer():
     def print_capabilities(self, bus = 0, device = 0, function = 0):
         field_names          = ['parameter' , 'Root Port', 'EndPoint']
         pci_cap1             = self.get_cap(bus,device,function)
-        sec_bus = self.get_secbus_num(bus,device,function)
+        sec_bus              = self.get_secbus_num(bus,device,function)
         pci_cap2             = self.get_cap(sec_bus)
         cfg_cap              = PrettyTable()
         cfg_cap.title        = "Root Port and End Point Capabilities and Current Value"
@@ -431,8 +432,41 @@ class pciecontainer():
         cfg_cap.add_row([ "ASPM L1.2 Enable",pci_cap1.aspm_L1_2_enable, pci_cap2.aspm_L1_2_enable])
         cfg_cap.add_row([ "PCIPM L1.1 Enable",pci_cap1.pcipm_L1_1_enable, pci_cap2.pcipm_L1_1_enable])
         cfg_cap.add_row([ "PCIPM L1.2 Enable",pci_cap1.pcipm_L1_2_enable, pci_cap2.pcipm_L1_2_enable])
+        cfg_cap.add_row([ "Maximum Read Request Size",pci_cap1.max_read_request_size, pci_cap2.max_read_request_size])
         print(cfg_cap)
+    
+    def print_offset(self, bus = 0, device = 0 , function = 0):        
+        cap_offset      = 0x34
+        ext_cap_offset  = 0x100
+        id_list     = {}
+        ext_id_list = {}
+        addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + cap_offset
+        offset_new = mem(addr,1)
+        while(offset_new):
+            addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + offset_new
+            cap_id = mem(addr,1)
+            id_list.update({hex(cap_id):hex(offset_new)})
+            offset_new = mem(addr+1,1)
+        while(ext_cap_offset):
+            addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + ext_cap_offset
+            cap_id = mem(addr,4) &0xFFFF
+            ext_id_list.update({hex(cap_id):hex(ext_cap_offset)})
+            ext_cap_offset =  mem(addr,4) >> 20
 
+        print('\nPCIe Capabilities :\n')
+        df = pd.DataFrame([id_list], index=[1])
+        print(df.to_string(index=False))
+
+        print('\nPCIe Extended Capabilities :\n')                
+        df = pd.DataFrame([ext_id_list], index=[1])
+        print(df.to_string(index=False))
+        print('\n')
+        
+        #for key,value in id_list.items():
+        #    print('{0} : {1}'.format(hex(key),hex(value)))
+
+        #for key,value in ext_id_list.items():
+        #    print('{0} : {1}'.format(hex(key),hex(value)))        
 
     def set_linkwidth(self, bus = 0, device = 0, function = 0, linkwidth = 1):
         print('''This function set Linkwidth''')
@@ -490,7 +524,7 @@ def main():
     #pcie_container.cfg_space_load('c:\\bdf_1_0_0')
     #pcie_container.scan_bus(3,15,3)
     #pcie_container.disable_aspm(0,6,0)
-    pcie_container.print_capabilities(0,6,0)
+    pcie_container.print_offset(0,6,0)
     #pcie_container.disable_l1ss(0,6,0,0,0,1,1)
     
     #pcie_container.set_devstate(1,0,0,3)
@@ -502,7 +536,7 @@ def main():
     #pcie_container.set_devstate(1,0,0,0)
     #sp.print_pcie_info(0,0)
     #pcie_container.enable_aspm(0,6,0)
-    #pcie_container.print_lpm_capabilities(0,6,0)
+    pcie_container.print_capabilities(0,6,1)
     #print(hex(pcie_container.get_did(1,0,0)))
     #pcie_container.set_aspm(1,0,0,1,1)
     # pcie_container.set_aspm(1,0,0,1,1)

@@ -2,7 +2,6 @@ from prettytable import PrettyTable
 from enum import Enum
 import pickle
 from pcieutils.pcie_h import *
-from pcieutils.pcie_registers import *
 import ipccli as _ipccli
 itp = _ipccli.baseaccess()
 import svtools.itp2baseaccess as itp2baseacc

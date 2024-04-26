@@ -1,11 +1,11 @@
 from prettytable import PrettyTable
 from enum import Enum
 import pickle
-from pcie_h import *
-from pcie_registers import *
+from pcieutils.pcie_h import *
+from pcieutils.pcie_registers import *
 import ipccli as _ipccli
 itp = _ipccli.baseaccess()
-import svtools.itp2baseaccess as itp2baseaccess
+import svtools.itp2baseaccess as itp2baseacc
 import pandas as pd
 
 PCIE_STD_CAP_PTR= 0x34
@@ -42,10 +42,10 @@ class pcie_cap(object):
         self.pcipm_L1_1_enable   = 0
         self.pcipm_L1_2_enable   = 0
 
-class pciecontainer():
+class pciecontainer(object):
     def __init__(self, pcie_xbar =  0xC0000000, reg_bar = 0xE0000000):
         print('PCIe Container Initializing...', end='')
-        self.driver               = itp2baseaccess.baseaccess()
+        self.itpcmd               = itp2baseacc.baseaccess()
         self.pcie_mmio_xbar       = pcie_xbar
         self.pcie_mmio2sb_regbar  = reg_bar
         self.root_ports           = [0x100, 0x600,0x061,0x62,0x64]
@@ -81,28 +81,28 @@ class pciecontainer():
             return self.read_byte(addr)
 
     def read_byte(self, addr = 0):
-        return mem(addr, 1)
+        return self.itpcmd.mem(addr, 1)
 
     def read_word(self, addr = 0):
-        return mem(addr, 2)
+        return self.itpcmd.mem(addr, 2)
 
     def read_dword(self, addr = 0):
-        return mem(addr, 4)
+        return self.itpcmd.mem(addr, 4)
     
     def read_quadword(self, addr = 0):
-        return mem(addr, 8)
-
+        return self.itpcmd.mem(addr, 8)
+                               
     def write_byte(self, addr = 0, data = 0):
-        return mem(addr, 1, data)
+        return self.itpcmd.mem(addr, 1, data)
 
     def write_word(self, addr = 0):
-        return mem(addr, 2, data)
+        return self.itpcmd.mem(addr, 2, data)
 
     def write_dword(self, addr = 0):
-        return mem(addr, 4, data)
+        return self.itpcmd.mem(addr, 4, data)
     
     def write_quadword(self, addr = 0):
-        return mem(addr, 8, data)
+        returnself.itpcmd.mem(addr, 8, data)
 
     def cfg_write(self, bus = 0, device = 0, function = 0, offset = 0, access = 'mem' ):
         print('Configuration Write : Bus : {0}, Dev : {1}, Fun : {2}, Offset : {3}, Data : {4}'.format(bus, device, function, offset, data))
@@ -129,7 +129,7 @@ class pciecontainer():
 
     def cfg_space_dump(self, bus = 0, device = 0, function = 0, file_path = 0):
         addr      = self.get_pcie_mmio_addr(bus,device,function)
-        cfg_space = memblock(addr,4,1024)
+        cfg_space = self.itpcmd.memblock(addr,4,1024)
         if (file_path == 0):
             file_path = 'c:\\bdf_{0}_{1}_{2}'.format(bus,device,function)
         with open(file_path,'wb') as fp:
@@ -274,7 +274,7 @@ class pciecontainer():
         read_val = self.cfg_read(bus,device,function, offset=l1ss_offset,size=1)
         addr = self.get_pcie_mmio_addr(bus, device,function,l1ss_offset)
         write_val = (read_val & 0xFFFFFFF0) | pcipm_L1_2 | (pcipm_L1_1 << 1) | (aspm_L1_2<<2) | (aspm_L1_1<<3)
-        mem(addr, 1, write_val)
+        self.itpcmd.mem(addr, 1, write_val)
         
 
     def enable_aspm(self, bus = 0, device = 0, function = 0):
@@ -296,7 +296,7 @@ class pciecontainer():
         read_val = self.cfg_read(bus,device,function, offset=aspm_offset,size=1)
         addr = self.get_pcie_mmio_addr(bus, device,function,aspm_offset)
         write_val = (read_val & 0xFFFFFFFC) | aspm_L0s | (aspm_L1 << 1)
-        mem(addr, 1, write_val)
+        self.itpcmd.mem(addr, 1, write_val)
 
     def get_cap(self, bus = 0, device = 0, function = 0):
         pciecap = pcie_cap()
@@ -442,17 +442,17 @@ class pciecontainer():
         id_list     = {}
         ext_id_list = {}
         addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + cap_offset
-        offset_new = mem(addr,1)
+        offset_new = self.itpcmd.mem(addr,1)
         while(offset_new):
             addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + offset_new
-            cap_id = mem(addr,1)
+            cap_id = self.itpcmd.mem(addr,1)
             id_list.update({hex(cap_id):hex(offset_new)})
-            offset_new = mem(addr+1,1)
+            offset_new = self.itpcmd.mem(addr+1,1)
         while(ext_cap_offset):
             addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + ext_cap_offset
-            cap_id = mem(addr,4) &0xFFFF
+            cap_id = self.itpcmd.mem(addr,4) &0xFFFF
             ext_id_list.update({hex(cap_id):hex(ext_cap_offset)})
-            ext_cap_offset =  mem(addr,4) >> 20
+            ext_cap_offset =  self.itpcmd.mem(addr,4) >> 20
 
         print('\nPCIe Capabilities :\n')
         df = pd.DataFrame([id_list], index=[1])
@@ -480,7 +480,7 @@ class pciecontainer():
         print(pwr_mgnt_control_reg_off)
         add = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + pwr_mgnt_control_reg_off
         val = (mem(add+4,4) & 0xFFFFFFFC) + dev_state
-        mem(add+4, 4, val)
+        self.itpcmd.mem(add+4, 4, val)
 
     def set_d3cold(self, bus = 0, device = 0, function = 0):
         print('''This function set Linkwidth''')
@@ -489,12 +489,12 @@ class pciecontainer():
         cap_id_found = 0
         if(offset == 0x34):
             addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + offset
-            offset_new = mem(addr,1)
+            offset_new = self.itpcmd.mem(addr,1)
             while((not cap_id_found) and (offset_new)):
                 addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + offset_new
-                cap_id = mem(addr,1)
+                cap_id = self.itpcmd.mem(addr,1)
                 if(cap_id != cap_id_exp):
-                    offset_new = mem(addr+1,1)
+                    offset_new = self.itpcmd.mem(addr+1,1)
                 else:
                     cap_id_found = 1
             if(cap_id_found):
@@ -506,16 +506,19 @@ class pciecontainer():
             offset_new = offset
             while((not cap_id_found) and (offset_new)):
                 addr = 0xC0000000 + ( bus << 20 ) + ( device << 15 ) + ( function<< 12 ) + offset_new
-                cap_id = mem(addr,4) &0xFFFF
+                cap_id = self.itpcmd.mem(addr,4) &0xFFFF
                 if(cap_id != cap_id_exp):
-                    offset_new =  mem(addr,4) >> 20
+                    offset_new =  self.itpcmd.mem(addr,4) >> 20
                 else:
                     cap_id_found = 1
             if(cap_id_found):
                 return offset_new
             else:
                 return 0
+
+pcie1 = pciecontainer()
    
+
 def main():
     pcie_container = pciecontainer()
     #print(hex(pcie_container.cfg_read(bus = 1, device = 0, function = 0)))

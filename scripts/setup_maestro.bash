@@ -7,6 +7,8 @@ sudo apt-get -y install git-gui
 sudo apt-get -y install git-lfs
 sudo apt-get -y install gitk
 sudo git config --global http.proxy http://proxy-chain.intel.com:911
+sudo git config --global http.proxy http://proxy-dmz.intel.com:912
+sudo git config --global https.proxy https://proxy-dmz.intel.com:912
 sudo git lfs install
 sudo apt-get install kate
 sudo apt-get -y install gdb
@@ -21,12 +23,12 @@ sudo apt-get install -y bison
 sudo apt-get install -y build-essential cmake
 #Perspec setup
 cd /root/
-[! -d maestro ] || mv maestro maestro_bp
-sudo git clone https://github.com/intel-restricted/frameworks.validation.maestro.maestro.git maestro
-wget http://ubit-artifactory-or.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_22.06.001-s.tar.gz
-tar -pxvzf 22.06.001-s.tar.gz
+#[! -d maestro ] || mv maestro maestro_bp
+#sudo git clone https://github.com/intel-restricted/frameworks.validation.maestro.maestro.git maestro
+https://af01p-or-app04.devtools.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_24.03.001.tar.gz
+tar -pxvzf svos_perspec_24.03.001.tar.gz
 cd install
-./perspec_svos_install.sh 22.06.001-s
+./perspec_svos_install.sh 24.03.001
 #Maestro Environment setup
 export $MAESTRO_REPO_PATH=/root/maestro
 export CADENCE_INSTALL_ROOT=/opt/cad

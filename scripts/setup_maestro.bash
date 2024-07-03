@@ -34,7 +34,7 @@ export $MAESTRO_REPO_PATH=/root/maestro
 export CADENCE_INSTALL_ROOT=/opt/cad
 cd $MAESTRO_REPO_PATH
 source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env
-export PERSPEC_VERSION=22.06.001
+export PERSPEC_VERSION=24.03.001
 #unsetenv CDS_LIC_FILE
 export CDS_LIC_FILE=5280@cadence03p.elic.intel.com:5280@cadence20p.elic.intel.com
 #compilation setup
@@ -46,5 +46,5 @@ export SITECODE=il
 git config --global diff.tool meld
 git config --global merge.tool meld
 git config --global --add difftool.prompt false
-export PATH=/opt/cad/perspec/21.09.001-s/tools/perspec/bin:$PATH
+export PATH=/opt/cad/perspec/24.03.001/tools/perspec/bin:$PATH
 export CADENCE_INSTALL_ROOT=/opt/cad

@@ -1,5 +1,7 @@
 #!/bin/bash
 #svos package_update
+echo "This Setup script to update all the required package to install Maestro and Perspec and set environment Variables"
+export PERSPEC_VERSION=24.03.001
 apt-get update
 apt-get dist-upgrade
 sudo apt-get -y install git
@@ -22,17 +24,34 @@ apt-get install -y libnetlib-dev
 sudo apt-get install -y bison
 sudo apt-get install -y build-essential cmake
 #Perspec setup
-export PERSPEC_VERSION=24.03.001
 echo Installing $PERSPEC_VERSION, Please update this script to install any latest version
+export MAESTRO_REPO_PATH=/root/maestro
 cd /root/
-#[! -d maestro ] || mv maestro maestro_bp
-#sudo git clone https://github.com/intel-restricted/frameworks.validation.maestro.maestro.git maestro
+# prompting for choice
+read -p "Do you want to install Maestro. (y)Yes/(n)No :- " choice
+# giving choices there tasks using
+case $choice in
+[yY]* )
+echo "Installing Maestro... if maestro folder is there moving as backup" 
+[! -d maestro ] || mv maestro maestro_bp
+sudo git clone https://github.com/intel-restricted/frameworks.validation.maestro.maestro.git maestro ;;
+[nN]* ) echo "Maestro Not installed" ;;
+*) exit ;;
+esac
+# prompting for choice
+read -p "Do you want to install Perspec. (y)Yes/(n)No :- " choice
+# giving choices there tasks using
+case $choice in
+[yY]* )
+echo "Installing Perspec" 
 wget https://af01p-or-app04.devtools.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_$PERSPEC_VERSION.tar.gz
 tar -pxvzf svos_perspec_$PERSPEC_VERSION.tar.gz
 cd install
-./perspec_svos_install.sh $PERSPEC_VERSION.tgz
+./perspec_svos_install.sh $PERSPEC_VERSION.tgz ;;
+[nN]* ) echo "Maestro Not installed" ;;
+*) exit ;;
+esac
 #Maestro Environment setup
-export MAESTRO_REPO_PATH=/root/maestro
 export CADENCE_INSTALL_ROOT=/opt/cad
 cd $MAESTRO_REPO_PATH
 source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env

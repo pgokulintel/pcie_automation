@@ -30,7 +30,7 @@ tar -pxvzf svos_perspec_24.03.001.tar.gz
 cd install
 ./perspec_svos_install.sh 24.03.001.tgz
 #Maestro Environment setup
-export $MAESTRO_REPO_PATH=/root/maestro
+export MAESTRO_REPO_PATH=/root/maestro
 export CADENCE_INSTALL_ROOT=/opt/cad
 cd $MAESTRO_REPO_PATH
 source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env

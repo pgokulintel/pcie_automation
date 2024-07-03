@@ -22,19 +22,20 @@ apt-get install -y libnetlib-dev
 sudo apt-get install -y bison
 sudo apt-get install -y build-essential cmake
 #Perspec setup
+export PERSPEC_VERSION=24.03.001
+echo Installing $PERSPEC_VERSION, Please update this script to install any latest version
 cd /root/
 #[! -d maestro ] || mv maestro maestro_bp
 #sudo git clone https://github.com/intel-restricted/frameworks.validation.maestro.maestro.git maestro
-https://af01p-or-app04.devtools.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_24.03.001.tar.gz
-tar -pxvzf svos_perspec_24.03.001.tar.gz
+wget https://af01p-or-app04.devtools.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_$PERSPEC_VERSION.tar.gz
+tar -pxvzf svos_perspec_$PERSPEC_VERSION.tar.gz
 cd install
-./perspec_svos_install.sh 24.03.001.tgz
+./perspec_svos_install.sh $PERSPEC_VERSION.tgz
 #Maestro Environment setup
 export MAESTRO_REPO_PATH=/root/maestro
 export CADENCE_INSTALL_ROOT=/opt/cad
 cd $MAESTRO_REPO_PATH
 source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env
-export PERSPEC_VERSION=24.03.001
 #unsetenv CDS_LIC_FILE
 export CDS_LIC_FILE=5280@cadence03p.elic.intel.com:5280@cadence20p.elic.intel.com
 #compilation setup
@@ -46,5 +47,5 @@ export SITECODE=il
 git config --global diff.tool meld
 git config --global merge.tool meld
 git config --global --add difftool.prompt false
-export PATH=/opt/cad/perspec/24.03.001/tools/perspec/bin:$PATH
+export PATH=/opt/cad/perspec/$PERSPEC_VERSION/tools/perspec/bin:$PATH
 export CADENCE_INSTALL_ROOT=/opt/cad

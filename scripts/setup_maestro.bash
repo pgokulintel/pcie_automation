@@ -28,13 +28,13 @@ cd /root/
 https://af01p-or-app04.devtools.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_24.03.001.tar.gz
 tar -pxvzf svos_perspec_24.03.001.tar.gz
 cd install
-./perspec_svos_install.sh 24.03.001
+./perspec_svos_install.sh 24.03.001.tgz
 #Maestro Environment setup
 export $MAESTRO_REPO_PATH=/root/maestro
 export CADENCE_INSTALL_ROOT=/opt/cad
 cd $MAESTRO_REPO_PATH
 source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env
-export PERSPEC_VERSION=22.06.001-s
+export PERSPEC_VERSION=22.06.001
 #unsetenv CDS_LIC_FILE
 export CDS_LIC_FILE=5280@cadence03p.elic.intel.com:5280@cadence20p.elic.intel.com
 #compilation setup

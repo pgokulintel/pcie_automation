@@ -24,7 +24,7 @@ apt-get install -y libnetlib-dev
 sudo apt-get install -y bison
 sudo apt-get install -y build-essential cmake
 #Perspec setup
-echo Installing $PERSPEC_VERSION, Please update this script to install any latest version
+echo "Installing $PERSPEC_VERSION, Please update this script to install any latest version from export PERSPEC_VERSION=24.03.001"
 export MAESTRO_REPO_PATH=/root/maestro
 cd /root/
 # prompting for choice

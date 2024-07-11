@@ -1,31 +1,41 @@
 #!/bin/bash
 #svos package_update
 echo "This Setup script to update all the required package to install Maestro and Perspec and set environment Variables"
-export PERSPEC_VERSION=24.03.001
+
+#Perspec setup
+PERSPEC_VERSION=24.03.001
+
+#Proxy Settings
+sudo git config --global http.proxy http://proxy-chain.intel.com:911
+sudo git config --global http.proxy http://proxy-dmz.intel.com:912
+sudo git config --global https.proxy https://proxy-dmz.intel.com:912
+export http_proxy=http://proxy-dmz.intel.com:911
+export https_proxy=http://proxy-dmz.intel.com:912
+export ftp_proxy=http://proxy-dmz.intel.com:911
+export socks_proxy=http://proxy-us.intel.com:1080
+export no_proxy=intel.com,.intel.com,localhost,127.0.0.1,10.0.0.0/8,192.168.0.0/16,172.16.0.0/12
+export MAESTRO_REPO_PATH=/root/maestro
+
+#Install Packages
 apt-get update
 apt-get dist-upgrade
 sudo apt-get -y install git
 sudo apt-get -y install git-gui
 sudo apt-get -y install git-lfs
 sudo apt-get -y install gitk
-sudo git config --global http.proxy http://proxy-chain.intel.com:911
-sudo git config --global http.proxy http://proxy-dmz.intel.com:912
-sudo git config --global https.proxy https://proxy-dmz.intel.com:912
 sudo git lfs install
 sudo apt-get install kate
 sudo apt-get -y install gdb
 sudo apt-get -y install git-gui
 sudo apt-get -y install meld
-apt-get install -y libtornado-dev libsv-dev python3-distutils osv-tornado-solarlib-dev libgecode49 libgecodegist49 libgecode-dev
+apt-get install -y libtornado-dev libsv-dev librocket-dev python3-distutils osv-tornado-solarlib-dev libgecode49 libgecodegist49 libgecode-dev
 apt-get install -y libospm-dev
 apt-get install -y libparse-dev
 apt-get install -y libmedpg-dev
 apt-get install -y libnetlib-dev
 sudo apt-get install -y bison
 sudo apt-get install -y build-essential cmake
-#Perspec setup
-echo "Installing $PERSPEC_VERSION, Please update this script to install any latest version from export PERSPEC_VERSION=24.03.001"
-export MAESTRO_REPO_PATH=/root/maestro
+
 cd /root/
 # prompting for choice
 read -p "Do you want to install Maestro. (y)Yes/(n)No :- " choice
@@ -43,28 +53,31 @@ read -p "Do you want to install Perspec. (y)Yes/(n)No :- " choice
 # giving choices there tasks using
 case $choice in
 [yY]* )
-echo "Installing Perspec" 
+echo "Installing $PERSPEC_VERSION, Please update this script to install any latest version"
 wget https://af01p-or-app04.devtools.intel.com/artifactory/maestro-local/Tools/svos/svos_perspec_$PERSPEC_VERSION.tar.gz
 tar -pxvzf svos_perspec_$PERSPEC_VERSION.tar.gz
 cd install
 ./perspec_svos_install.sh $PERSPEC_VERSION.tgz ;;
-[nN]* ) echo "Maestro Not installed" ;;
+[nN]* ) echo "Perspec Not installed" ;;
 *) exit ;;
 esac
-#Maestro Environment setup
+export PERSPEC_VERSION=$PERSPEC_VERSION
 export CADENCE_INSTALL_ROOT=/opt/cad
-cd $MAESTRO_REPO_PATH
-source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env
 #unsetenv CDS_LIC_FILE
 export CDS_LIC_FILE=5280@cadence03p.elic.intel.com:5280@cadence20p.elic.intel.com
 #compilation setup
 export CONTENT_TYPE=LINUX
 export SITECODE=il
+export PATH=/opt/cad/perspec/$PERSPEC_VERSION/tools/perspec/bin:$PATH
+export CADENCE_INSTALL_ROOT=/opt/cad
+
 #git checkout integration
 #source ./utils/setup.env
 #git setup
 git config --global diff.tool meld
 git config --global merge.tool meld
 git config --global --add difftool.prompt false
-export PATH=/opt/cad/perspec/$PERSPEC_VERSION/tools/perspec/bin:$PATH
-export CADENCE_INSTALL_ROOT=/opt/cad
+#Maestro Environment setup
+cd $MAESTRO_REPO_PATH
+bash
+source $MAESTRO_REPO_PATH/perspec/scripts/environment/setup.env

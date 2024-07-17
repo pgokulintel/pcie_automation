@@ -46,7 +46,7 @@ read -p "Do you want to install Maestro. (y)Yes/(n)No :- " choice
 case $choice in
 [yY]* )
 echo "Installing Maestro... if maestro folder is there moving as backup" 
-[! -d maestro ] || mv maestro maestro_bp
+#[! -d maestro ] || mv maestro maestro_bp
 sudo git clone https://github.com/intel-restricted/frameworks.validation.maestro.maestro.git maestro ;;
 [nN]* ) echo "Maestro Not installed" ;;
 *) exit ;;

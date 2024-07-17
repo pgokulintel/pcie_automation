@@ -35,6 +35,8 @@ apt-get install -y libmedpg-dev
 apt-get install -y libnetlib-dev
 sudo apt-get install -y bison
 sudo apt-get install -y build-essential cmake
+apt install -y acpica-tools apt-file apt-utils autoconf autogen automake autotools-dev bc bison cmake csh curl debhelper dh-acc dnsutils doxygen dpkg-repack expect g++ gcc gdb git git-lfs htop kmod ksh libelf-dev libgecode-dev libmedpg-dev libncurses5-dev libnetlib-dev libospm-dev libparse-dev libpci-dev libpcietc-dev librocket-dev libsv-dev libtool libtornado-dev lsb-release lshw lsof make man nano ncdu ninja-build osv-scc osv-hostsmanager osv-tornado-solarlib-dev parted pcietctests python3-distutils python3-full python3-pip python3-virtualenv ripgrep rsync software-properties-common svdefs-modules-dev svos-pcie svos-pcietcrand svos-prerelease-kernel-headers svos-released-kernel-headers svos-released-kernels tldr traceroute tree ucf-modules-dev valgrind vim wget zip
+apt install libpcietc-datagen-dev libpcietc-dev
 
 cd /root/
 # prompting for choice
